@@ -4,6 +4,9 @@
         <meta charset="UTF -8">
         <meta http-equiv="X-UA-Compatible content="width=device-width, initial-scale=1.0">
         <title>Complete Responsive Grocery Website Design Tutorial</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
         <!--font awesome cdn link-->
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">\
         <!--custom css file link-->
@@ -20,9 +23,10 @@
         <a href="#categories">categories</a>
         <a href="#review">review</a>
         <a href="#blogs">blogs</a>
-    </nav>
-    <div class="icons">
-        <div class="fas fa-bars" id="menu-btn"></div>
+    </a>
+</nav>
+<div class="icons">
+        <div class="fas fa-bars" id="menu-bars"></div>
         <div class="fas fa-search" id="search-btn"></div>
         <div class="fas fa-shopping-cart" id="cart-btn"></div>
         <div class="fas fa-user" id="login-btn"></div>
@@ -71,8 +75,10 @@
         <p>dont have an account<a href="#">create now</a></p>
         <input type="submit" value="login now" class="btn">
     </form>
+        </div>
+    </form>
 </header>
-<!--header section starts-->
+<!-- header section starts -->
 <section class="home" id="home">
     <div class="content">
         <h3>fresh and <span>organic</span>products for your</h3>
@@ -81,9 +87,9 @@
     </div>
 
 </section>
-<!--home section ends-->
+<!-- home section ends -->
 
-<!--features section starts-->
+<!-- features section starts -->
 <section class="features" id="features">
     <h1 class="heading">our <span>features</span></h1>
     <div class="box-container">
@@ -107,90 +113,142 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates nulla commodi deleniti dicta quia eius, voluptate explicabo odit ad inventore minima suscipit unde corporis quae dolorum nihil voluptatibus. Assumenda.</p>
             <a href="#" class="btn">read more</a>
 </section>
-<!--features section ends-->
+<!-- features section ends -->
 
-<!--product section starts-->
+<!-- products section starts -->
 
 <section class="products" id="products">
 
     <h1 class="heading">our<span>products</span></h1>
 
-    <div class="product-slider">
+    <div class="swiper product-slider">
 
-        <div class="wrapper">
+        <div class="swiper-wrapper">
 
-            <div class="box">
-
-                <img src="C:\Users\user\Desktop\homepage\rose.jpg" alt="">
-                <h3>a new brand</h3>
-                <div class="price"> $4.99/- -10.99/- </div>
-                <div class="stars">
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start-half-alt"></i>
+            <div class=" swiper-slide box">
+                    <img src="C:\Users\user\Desktop\homepage\tomato.jpeg" alt="">
+                    <h3>new brand</h3>
+                    <div class="price"> $4.99/- -10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
                 </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="box">
 
-                <img src="C:\Users\user\Desktop\homepage\rose.jpg" alt="">
-                <h3>a new brand</h3>
-                <div class="price"> $4.99/- -10.99/- </div>
-                <div class="stars">
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start-half-alt"></i>
+                <div class="swiper-slide box">
+                    <img src="C:\Users\user\Desktop\homepage\potato.jpeg" alt="">
+                    <h3>fresh potatoes</h3>
+                    <div class="price"> $4.99/- -10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
                 </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="box">
 
-                <img src="C:\Users\user\Desktop\homepage\sunflower.jpg" alt="">
-                <h3>a new brand</h3>
-                <div class="price"> $4.99/- -10.99/- </div>
-                <div class="stars">
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start-half-alt"></i>
+                <div class="swiper-slide box">
+                    <img src="C:\Users\user\Desktop\homepage\ovacado.jpeg" alt="">
+                    <h3>fresh ovacado</h3>
+                    <div class="price"> $4.99/- -10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start"></i>
+                        <i class="fas fa-start-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
                 </div>
-                <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="box">
+            <div class="product-slider">
 
-                <img src="C:\Users\user\Desktop\homepage\shoe2.jpeg" alt="">
-                <h3>a new brand</h3>
-                <div class="price"> $4.99/- -10.99/- </div>
-                <div class="stars">
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start"></i>
-                    <i class="fas fa-start-half-alt"></i>
-                </div>
-                <a href="#" class="btn">add to cart</a>
-        </div>
-        <div class="box">
+                <div class="swiper-wrapper">
+        
+                    <div class="swiper-slide box">
+                            <img src="C:\Users\user\Desktop\homepage\shoe1.jpeg" alt="">
+                            <h3>new brand</h3>
+                            <div class="price"> $4.99/- -10.99/- </div>
+                            <div class="stars">
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start-half-alt"></i>
+                            </div>
+                            <a href="#" class="btn">add to cart</a>
+                        </div>
+        
+                        <div class="swiper-slide box">
+                            <img src="C:\Users\user\Desktop\homepage\shoe3.jpeg" alt="">
+                            <h3>new brand</h3>
+                            <div class="price"> $4.99/- -10.99/- </div>
+                            <div class="stars">
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start-half-alt"></i>
+                            </div>
+                            <a href="#" class="btn">add to cart</a>
+                        </div>
+        
+                        <div class="swiper-slide box">
+                            <img src="C:\Users\user\Desktop\homepage\shoe2.jpeg" alt="">
+                            <h3>new brand</h3>
+                            <div class="price"> $4.99/- -10.99/- </div>
+                            <div class="stars">
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start"></i>
+                                <i class="fas fa-start-half-alt"></i>
+                            </div>
+                            <a href="#" class="btn">add to cart</a>
+                        </div>
+                    </div>
+        </section>
+<!-- products section ends -->
 
-            <img src="C:\Users\user\Desktop\homepage\shoe1.jpeg" alt="">
-            <h3>a new brand</h3>
-            <div class="price"> $4.99/- -10.99/- </div>
-            <div class="stars">
-                <i class="fas fa-start"></i>
-                <i class="fas fa-start"></i>
-                <i class="fas fa-start"></i>
-                <i class="fas fa-start"></i>
-                <i class="fas fa-start-half-alt"></i>
-            </div>
-            <a href="#" class="btn">add to cart</a>
-    </div>
-</section>
-<!--products section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <!--custom js file link-->
     <script src="js/script.js"></script>
     </body>

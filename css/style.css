@@ -4,7 +4,7 @@
     --black:#130f40;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
-    --box-shadow:2rem solid rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
     --outline:.1rem solid rgba(0,0,0,.1);
     --outline-hover:.2rem solid var(black);
 
@@ -76,7 +76,7 @@ section{
     font-weight: bolder;
     color: var(--black);
 }
-.header .logo i {
+.header .logo i{
     color:orange;
 }
 .header .navbar a{
@@ -91,7 +91,7 @@ color: var(--black);
 height: 4.5rem;
 width: 4.5rem;
 line-height: 4.5rem;
-border-radius: 4.5rem;
+border-radius: .5rem;
 background: #eee;
 color: var(--black);
 font-size: 2rem;
@@ -99,11 +99,13 @@ margin-right: .3rem;
 cursor: pointer;
 text-align: center;
 }
+
 .header .icons div:hover{
     background: var(--orange);
     color: #fff;
 }
-#menu-btn{
+
+#menu-bars{
     display: none;
 }
 .header .search-form{
@@ -205,31 +207,26 @@ text-align: center;
     padding: 2rem;
     border-radius: .5rem;
     background: #fff;
-    text-align: center;
-}
-.header .login-form h3{
-  font-size: 2.5rem;
-  text-transform: uppercase; 
-  color: var(--black); 
-}
-.header .login-form{
- position: absolute;
-top:110% ; right: -110%;
-width: 30rem;
-box-shadow: var(--box-shadow);
-padding: 2rem;
-border-radius: .5rem;
-background: #fff;
-text-align: center;
-}
-.header .login-form.active{
-    right: 2rem;
-    transition: .4s linear;
+    text-align: center; 
 }
 .header .login-form h3{
     font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--black);
+}
+.header .login-form{
+    position: absolute;
+   top:110% ; right: -110%;
+   width: 30rem;
+   box-shadow: var(--box-shadow);
+   padding: 2rem;
+   border-radius: .5rem;
+   background: #fff;
+   text-align: center;
+   }
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
 }
 .header .login-form .box{
     width: 100%;
@@ -310,6 +307,48 @@ text-align: center;
     color: var(--light-color);
     padding: 1rem 0;
 }
+.products .product-slider{
+padding: 1rem;
+}
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+    }
+    .products .product-slider .box{
+        background: #fff;
+        border-radius: .5rem;
+        text-align: center;
+        padding: 3rem 2rem;
+        outline-offset: -1rem;
+        outline: var(--outline);
+        box-shadow: var(--box-shadow);
+        transition: .2s linear;
+    }
+    .products .product-slider .box:hover{
+        outline-offset: 0rem;
+        outline: var(--outline-hover);
+
+    }
+    .products .product-slider .box img{
+        height: 20rem;
+    }
+    .products .product-slider .box h3{
+        font-size: 2.5rem;
+        color: var(--black);
+    }
+    .products .product-slider .box .price{
+        font-size: 2rem;
+        color: var(--light-color);
+        padding: .5rem 0;
+    }
+    .products .product-slider .box .stars i{
+        font-size: 1.7rem;
+        color: var(--orange);
+        padding: .5rem 0;
+    }
+
+
+
+
 
 
 
@@ -344,7 +383,7 @@ section{
 }
 @media (max-width:768px){
 
-    #menu-btn{
+    #menu-bars{
         display: inline-block;
     }
     .header .search-form{
@@ -373,6 +412,6 @@ section{
     html{
         font-size: 50;
     }
-    .heading{
+    .heading {
         font-size: 2.5rem;
     }
